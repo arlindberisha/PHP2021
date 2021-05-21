@@ -84,10 +84,6 @@ require('header.php');
       $komenti = $_POST['message'];
 	  $email = $_POST['email'];
 	  $regex='/^([a-zA-Z0-9\.]+@+[a-zA-Z]+.[a-zA-Z]{2,3})$/';
-	//   $kritika = $emri." ".$email." : ".$komenti. "\r\n" ;
-	//   $file = "kritikat.txt";
-	//   file_put_contents($file, $kritika, FILE_APPEND);
-	//   "/[a-zA-Z0-9_-.+]+@[a-zA-Z0-9-]+.[a-zA-Z]+/"
 		if(preg_match($regex,$email))
 		{
 			$kritika = $emri." ".$email." : ".$komenti. "\r\n" ;
